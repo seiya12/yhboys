@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*１）デフォルトスタイルの初期化*/
+*{
+    margin:0px;
+    padding:0px;
+
+/*間隔の初期化*/
+/*余白の初期化*/
+}
+li{
+    list-style-type:none;/*マーカーの非表示*/
+    list-style-position:outside;/*位置制御*/
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    background-image:url(../images/back4.gif);
+}
+#wrapper{
+    width:900px;
+    margin: 0 auto;
+    border:solid #163b77 5px;
+    background-color:#ffffff;
+}
+
+
+
+#header{
+    text-align: center;
+    font-size: 14px;
+    color:#1e50a2;
+    border-bottom: 5px solid #163b77;
+}
+#branding{
+    z-index:1;
+    border-bottom: 5px solid #163b77;/*0*/
+    height:487px;
+}
+#navi{
+    height:45px;
+}
+#dropmenu{
+    width:900px;
+    height:40px;
+    margin:0px auto 300px;
+    background:#1e50a2;
+    border-bottom: 5px solid #163b77;
+    position:absolute;
+}
+#dropmenu li{
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+#dropmenu li a{
+    display: block;
+    padding: 15px 0 11px;
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    transition:.4s;
+}
+#dropmenu li:hover > a{
+    background:#194285;
+    color: #ffff8e;
+}
+
+#dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#dropmenu li ul li{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color:#fadae8;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+}
+#dropmenu li ul li a{
+    padding: 13px 15px;
+    background:#163b77;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+#dropmenu li:hover ul li{
+    height: 38px;
+    border-top: 1px solid #2666cd;
+    z-index:2;
+}
+#dropmenu li:hover ul li:first-child{
+    border-top: 0;
+}
+
+
+
+.sen{
+    text-decoration: underline;
+}
+#cont{
+    box-sizing: border-box;
+    overflow:hidden;
+    padding:80px 60px;
+}
+#cont h2{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #163b77;
+}
+#cont .vid{
+    padding-left:70px;
+    margin-bottom:20px;
+    margin-top:-30px;
+}
+#cont p{
+    text-align: center;
+}
+
+
+
+

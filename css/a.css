@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*１）デフォルトスタイルの初期化*/
+*{
+    margin:0px;
+    padding:0px;
+
+/*間隔の初期化*/
+/*余白の初期化*/
+}
+li{
+    list-style-type:none;/*マーカーの非表示*/
+    list-style-position:outside;/*位置制御*/
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    background-image:url(../images/back2.gif);
+}
+#wrapper{
+    width:900px;
+    margin: 0 auto;
+    border:solid #4ca16c  5px;
+    background-color:#ffffff;  
+}
+#header{
+    text-align: center;
+    font-size: 14px;
+    color:#68b886;
+    border-bottom: 5px solid #4ca16c;
+}
+#branding{
+    height:600px;
+    z-index:1;
+    border-bottom: 5px solid #4ca16c;/*0*/
+}
+#navi{
+    height:45px;
+}
+#dropmenu{
+    width:900px;
+    height:40px;
+    margin:0px auto 300px;
+    background:#68b886;
+    border-bottom: 5px solid #4ca16c;
+    position:absolute;
+}
+#dropmenu li{
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+#dropmenu li a{
+    display: block;
+    padding: 15px 0 11px;
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    transition:.4s;
+}
+#dropmenu li:hover > a{
+    background:#51ad74;
+    color: #ffff8e;
+}
+
+#dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#dropmenu li ul li{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color:#c4e3d0;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+}
+#dropmenu li ul li a{
+    padding: 13px 15px;
+    background:#4ca16c;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+#dropmenu li:hover ul li{
+    height: 38px;
+    border-top: 1px solid #8bc8a2;;
+    z-index:2;
+}
+#dropmenu li:hover ul li:first-child{
+    border-top: 0;
+}
+.sen{
+    text-decoration: underline;
+}
+#cont{
+    box-sizing: border-box;
+    overflow:hidden;
+    padding:80px 60px;
+}
+#cont h2{
+    border-bottom:solid #479564 1px;
+    margin-bottom:40px;
+    font-weight: bold;
+    color:#3c7e55;
+}
+#cont1{
+    margin-bottom:50px;
+}
+#cont1 p{
+    text-align: justify;
+}
+#cont2 p{
+    margin-bottom:20px;
+}
+#cont2 div{
+    overflow:hidden;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+#contl{
+    float:left;
+    width:390px;
+    padding-right:100px;
+}
+#contl div{
+    margin-bottom:10px;
+    height:30px;
+    border-bottom:solid #479564 1px;
+    float:left;
+}
+#contr{
+    float:left;
+    width:390px;
+}
+#contr div{
+    margin-bottom:50px;
+    border-bottom:solid #479564 1px;
+    height:30px;
+    float:left;
+}
+.cl1{
+    width:140px;
+}
+.cl2{
+    width:120px;
+}
+.cl3{
+    width:30px;
+}
+.cr1{
+    width:280px;
+}
+.cr2{
+    width:110px;
+}
+.cr3{
+    width:130px;
+}
+.cr4{
+    width:150px;
+}
+h3,p{
+    clear:both;
+}
+#cont3 p{
+    text-align: justify;
+    margin-bottom:50px;
+}
+#click{
+    position: relative;
+    top:-150px;
+    left:345px;
+    z-index:3;
+    height:0px;
+}
+
+
+
+
+
+
+
+
